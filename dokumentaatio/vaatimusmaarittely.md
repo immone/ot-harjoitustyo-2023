@@ -15,6 +15,31 @@ pääsee tekemään tehtäviä.
 
 ## Perusversion tarjoama toiminnallisuus
 
+## Käyttöliittymäluonnos
+
+ ```mermaid
+ classDiagram
+      View "1" --> "1" Game
+      Game "1" --> "1" User: "has"
+      Game "1" --> "*" Exercise: "fetches"
+      Exercise "1" --> "*" Question: "generates"
+      class Game{
+        user
+        mode
+      }
+      class User{
+        name
+        difficulty
+      }
+      class Exercise{
+        type
+      }
+      class Question{
+      }
+      class View{
+      }
+```
+
 ## Käynnistyksen yhteydessä
 - Käyttäjä voi valita kahdesta vaikeustasosta (helppo/vaikea)
 - Valittuaan vaikeustason käyttäjä siirtyy tehtävien valintaan
@@ -38,3 +63,4 @@ haluaisi vaihtaa tehtävätyyppiä tai -aihetta.
 - Kuinka implementoida eri tehtävätyyppien vastaaminen järkevästi:
 esimerkiksi riittääkö pelkät monivalinnat vai onko järkevää lisätä 
 vastauslaatikko?
+
