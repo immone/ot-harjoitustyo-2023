@@ -5,11 +5,7 @@
       Monopoli "40" --> "1" Ruutu
       Pelaaja "1" --> "1" Pelinappula : Omistaa
       Ruutu "*" --> "1" Pelinappula : Sisältää
-      Aloitusruutu --|> Ruutu
-      Vankila --|> Ruutu
-      Sattuma/yhteismaa --|> Ruutu
-      Asema/laitos --|> Ruutu
-      Katu --|> Ruutu
+      
       class Monopoli{
       	aloitusruutu
       	vankila
