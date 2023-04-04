@@ -1,15 +1,19 @@
 ```mermaid
  classDiagram
-      Todo "*" --> "1" User
-      class Pelilauta{
-          password
+      Monopoli "1" --> "1" Pelilauta
+      Monopoli "2..8" --> "1" Pelaaja
+      Monopoli "40" --> "1" Ruutu
+      Pelaaja "1" --> "1" Pelinappula
+      Pelinappula "1" --> "*" Ruutu
+      class Monopoli{
       }
-      class Todo{
-          id
-          content
-          done
+      class Pelilauta{
       }
       class Ruutu{
-      	ass
+      	seuraava_ruutu
+      }
+      class Pelaaja{
+      }
+      class Pelinappula{	
       }
 ```
