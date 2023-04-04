@@ -7,8 +7,8 @@
       Ruutu "*" --> "1" Pelinappula : Sisältää
       Aloitusruutu --|> Ruutu
       Vankila --|> Ruutu
-      Sattuma/yhteismaa --|> Ruutu
-      Asema/laitos --|> Ruutu
+      SattumaJaYhteismaa --|> Ruutu
+      AsemaJaLaitos --|> Ruutu
       Katu --|> Ruutu
       class Monopoli{
       	aloitusruutu
@@ -29,14 +29,14 @@
       }
       class Vankila{
       }
-      class Sattuma/yhteismaa{
+      class SattumaJaYhteismaa{
         toiminto_kortti
       }
-      class Asema/laitos{
+      class AsemaJaLaitos{
       }
       class Katu{
-        talojen_määrä
-        hotellien_määrä
+        talojen_maara
+        hotellien_maara
         omistaja
       }
 ```
